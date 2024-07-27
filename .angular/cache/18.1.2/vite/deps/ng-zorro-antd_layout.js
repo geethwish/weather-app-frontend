@@ -1,32 +1,32 @@
 import {
   NzMenuDirective
-} from "./chunk-FG4KSTDV.js";
-import "./chunk-M5FUKCKS.js";
-import "./chunk-G2PCKUVY.js";
-import "./chunk-GBQYR2LH.js";
+} from "./chunk-UQ477QB3.js";
+import "./chunk-Z24PUMSF.js";
+import "./chunk-5HFDAEQS.js";
+import "./chunk-IIGBBPVN.js";
+import {
+  NzIconDirective,
+  NzIconModule
+} from "./chunk-U6ISQAOT.js";
 import {
   Directionality,
   NzBreakpointService,
   siderResponsiveMap
-} from "./chunk-GGOZUGZ6.js";
-import "./chunk-6HHSGXHP.js";
-import {
-  NzIconDirective,
-  NzIconModule
-} from "./chunk-IYV2IX7F.js";
-import "./chunk-GSS2JWKH.js";
+} from "./chunk-OWKW7Z4Q.js";
 import {
   Platform
-} from "./chunk-6KTGRHNN.js";
+} from "./chunk-RVUF6VUO.js";
 import {
   inNextTick,
   toCssPixel
-} from "./chunk-M7FXJIJX.js";
-import "./chunk-O34RVPJE.js";
-import "./chunk-SSYHX3UA.js";
+} from "./chunk-E4EIZ5XZ.js";
+import "./chunk-GSS2JWKH.js";
+import "./chunk-5OVKS5BM.js";
+import "./chunk-UMMJXTFN.js";
+import "./chunk-JIZYJWCP.js";
 import {
   NgTemplateOutlet
-} from "./chunk-AOTPVOB3.js";
+} from "./chunk-F2NMOQGF.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -39,11 +39,9 @@ import {
   NgModule,
   Output,
   Renderer2,
-  Subject,
   ViewEncapsulation$1,
   booleanAttribute,
   setClassMetadata,
-  takeUntil,
   ɵɵInputTransformsFeature,
   ɵɵNgOnChangesFeature,
   ɵɵStandaloneFeature,
@@ -72,8 +70,12 @@ import {
   ɵɵstyleProp,
   ɵɵtemplate,
   ɵɵtemplateRefExtractor
-} from "./chunk-VNJPAKKC.js";
-import "./chunk-WDMUDEB6.js";
+} from "./chunk-4Z5MUN7N.js";
+import {
+  Subject,
+  takeUntil
+} from "./chunk-SVLPOJW7.js";
+import "./chunk-4ULMLRGT.js";
 
 // node_modules/ng-zorro-antd/fesm2022/ng-zorro-antd-layout.mjs
 var _c0 = ["*"];

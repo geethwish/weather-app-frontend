@@ -10,15 +10,16 @@ import {
   NzIconService,
   provideNzIcons,
   provideNzIconsPatch
-} from "./chunk-IYV2IX7F.js";
+} from "./chunk-U6ISQAOT.js";
+import "./chunk-RVUF6VUO.js";
+import "./chunk-E4EIZ5XZ.js";
 import "./chunk-GSS2JWKH.js";
-import "./chunk-6KTGRHNN.js";
-import "./chunk-M7FXJIJX.js";
-import "./chunk-O34RVPJE.js";
-import "./chunk-SSYHX3UA.js";
-import "./chunk-AOTPVOB3.js";
-import "./chunk-VNJPAKKC.js";
-import "./chunk-WDMUDEB6.js";
+import "./chunk-UMMJXTFN.js";
+import "./chunk-JIZYJWCP.js";
+import "./chunk-F2NMOQGF.js";
+import "./chunk-4Z5MUN7N.js";
+import "./chunk-SVLPOJW7.js";
+import "./chunk-4ULMLRGT.js";
 export {
   DEFAULT_TWOTONE_COLOR,
   NZ_ICONS,
