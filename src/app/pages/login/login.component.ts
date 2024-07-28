@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { Router, RouterModule } from "@angular/router";
-import { AuthService } from "../services/auth.service";
+import { AuthService } from "../../services/auth.service";
 import {
   FormBuilder,
   FormsModule,
@@ -11,7 +11,7 @@ import {
 } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
-import { TextLogoComponent } from "../text-logo/text-logo.component";
+import { TextLogoComponent } from "../../components/text-logo/text-logo.component";
 import { NzFormModule } from "ng-zorro-antd/form";
 import { NzInputModule } from "ng-zorro-antd/input";
 
@@ -72,15 +72,26 @@ export class LoginComponent {
     if (typeof email === "string" && typeof password === "string") {
       this.authService.login(email, password).subscribe(
         (response) => {
-          localStorage.setItem("token", response.token);
-          this.router.navigate(["/weather"]);
+          if (
+            response.data.token !== undefined &&
+            response.data.token !== null &&
+            response.data.token !== ""
+          ) {
+            localStorage.setItem("token", response.data.token);
+
+            // Fetch user details when login success
+            this.authService.fetchUserDetails();
+            this.router.navigate(["/home"]);
+          } else {
+            console.log("login failed");
+          }
         },
         (error) => {
           console.error(error);
         }
       );
     } else {
-      console.error("Username or password is not a string");
+      console.error("Username or password is incorrect");
     }
   }
 }

@@ -188,6 +188,7 @@ function _isTestEnvironment() {
 
 export {
   Platform,
+  PlatformModule,
   normalizePassiveListenerOptions,
   RtlScrollAxisType,
   supportsScrollBehavior,
@@ -197,4 +198,4 @@ export {
   _getEventTarget,
   _isTestEnvironment
 };
-//# sourceMappingURL=chunk-RVUF6VUO.js.map
+//# sourceMappingURL=chunk-SBSGXA3C.js.map

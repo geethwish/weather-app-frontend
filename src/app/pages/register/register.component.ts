@@ -8,8 +8,8 @@ import {
   Validators,
 } from "@angular/forms";
 import { Router } from "@angular/router";
-import { AuthService } from "../services/auth.service";
-import { TextLogoComponent } from "../text-logo/text-logo.component";
+import { AuthService } from "../../services/auth.service";
+import { TextLogoComponent } from "../../components/text-logo/text-logo.component";
 import { NzFormModule } from "ng-zorro-antd/form";
 import { NzInputModule } from "ng-zorro-antd/input";
 
@@ -76,8 +76,19 @@ export class RegisterComponent {
       )
       .subscribe(
         (response) => {
-          localStorage.setItem("token", response.token);
-          this.router.navigate(["/weather"]);
+          if (
+            response.data.token !== undefined &&
+            response.data.token !== null &&
+            response.data.token !== ""
+          ) {
+            localStorage.setItem("token", response.data.token);
+
+            // Fetch user details when login success
+            this.authService.fetchUserDetails();
+            this.router.navigate(["/home"]);
+          } else {
+            console.log("login failed");
+          }
         },
         (error) => {
           console.error(error);

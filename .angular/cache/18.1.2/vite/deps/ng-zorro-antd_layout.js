@@ -1,27 +1,27 @@
 import {
   NzMenuDirective
-} from "./chunk-UQ477QB3.js";
-import "./chunk-Z24PUMSF.js";
+} from "./chunk-ANEUPX47.js";
+import "./chunk-JUJ24KMN.js";
 import "./chunk-5HFDAEQS.js";
-import "./chunk-IIGBBPVN.js";
-import {
-  NzIconDirective,
-  NzIconModule
-} from "./chunk-U6ISQAOT.js";
+import "./chunk-RYXCVOOR.js";
 import {
   Directionality,
   NzBreakpointService,
   siderResponsiveMap
-} from "./chunk-OWKW7Z4Q.js";
+} from "./chunk-3ARI7WNA.js";
+import "./chunk-5OVKS5BM.js";
+import {
+  NzIconDirective,
+  NzIconModule
+} from "./chunk-KUTW6UCX.js";
+import "./chunk-GSS2JWKH.js";
 import {
   Platform
-} from "./chunk-RVUF6VUO.js";
+} from "./chunk-SBSGXA3C.js";
 import {
   inNextTick,
   toCssPixel
-} from "./chunk-E4EIZ5XZ.js";
-import "./chunk-GSS2JWKH.js";
-import "./chunk-5OVKS5BM.js";
+} from "./chunk-3IEJADGA.js";
 import "./chunk-UMMJXTFN.js";
 import "./chunk-JIZYJWCP.js";
 import {

@@ -3,7 +3,7 @@ import {
   NzFormNoStatusService,
   NzFormPatchModule,
   NzFormStatusService
-} from "./chunk-2V4UVNO3.js";
+} from "./chunk-U2TJMK2T.js";
 import {
   NgControl
 } from "./chunk-RIQS6HJI.js";
@@ -15,30 +15,30 @@ import {
   NzOutletModule,
   NzStringTemplateOutletDirective,
   SHIFT
-} from "./chunk-IIGBBPVN.js";
-import {
-  NzIconDirective,
-  NzIconModule
-} from "./chunk-U6ISQAOT.js";
+} from "./chunk-RYXCVOOR.js";
 import {
   BreakpointObserver,
   Directionality,
   NzResizeService
-} from "./chunk-OWKW7Z4Q.js";
+} from "./chunk-3ARI7WNA.js";
+import {
+  NzIconDirective,
+  NzIconModule
+} from "./chunk-KUTW6UCX.js";
+import "./chunk-GSS2JWKH.js";
 import {
   Platform,
   _getEventTarget,
   _getFocusedElementPierceShadowDom,
   _getShadowRoot,
   normalizePassiveListenerOptions
-} from "./chunk-RVUF6VUO.js";
+} from "./chunk-SBSGXA3C.js";
 import {
   coerceElement,
   coerceNumberProperty,
   getStatusClassNames,
   isNotNil
-} from "./chunk-E4EIZ5XZ.js";
-import "./chunk-GSS2JWKH.js";
+} from "./chunk-3IEJADGA.js";
 import "./chunk-UMMJXTFN.js";
 import "./chunk-JIZYJWCP.js";
 import {

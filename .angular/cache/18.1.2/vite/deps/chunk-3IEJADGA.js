@@ -162,12 +162,13 @@ function getStatusClassNames(prefixCls, status, hasFeedback) {
 }
 
 export {
+  environment,
+  PREFIX,
+  warn,
   coerceNumberProperty,
   coerceArray,
   coerceCssPixelValue,
   coerceElement,
-  environment,
-  warn,
   isNotNil,
   toBoolean,
   numberAttributeWithZeroFallback,
@@ -179,4 +180,4 @@ export {
   updateCSS,
   getStatusClassNames
 };
-//# sourceMappingURL=chunk-E4EIZ5XZ.js.map
+//# sourceMappingURL=chunk-3IEJADGA.js.map

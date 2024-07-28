@@ -1,0 +1,49 @@
+<nz-layout class="h-full">
+  <nz-sider nzCollapsible nzWidth="200px">
+    <div class="w-full text-white pt-2 pb-2 text-xl font-semibold text-center">
+      <a href="/">Weather Pal</a>
+    </div>
+    <ul
+      nz-menu
+      nzMode="inline"
+      nzTheme="dark"
+      [nzInlineCollapsed]="isCollapsed"
+    >
+      <li nz-menu-item nz-tooltip nzSelected>
+        <span nz-icon nzType="cloud"></span>
+        <span>Weather</span>
+      </li>
+      <li nz-menu-item nz-tooltip>
+        <span nz-icon nzType="setting"></span>
+        <span>Settings</span>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <a nz-dropdown [nzDropdownMenu]="menu" nzTrigger="click">
+        <nz-avatar
+          [nzSize]="48"
+          nzText="{{ getFirstLetters(userDetails?.name || '') }}"
+          class="bg-gradient-to-r from-blue-200 to-cyan-200 text-blue-950 font-bold"
+        ></nz-avatar>
+      </a>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu nzSelectable class="profile-dropdown">
+          <li nz-menu-item>
+            <span nz-icon nzType="user" nzTheme="outline" class="mr-1"></span
+            >Profile
+          </li>
+          <li nz-menu-item (click)="handleLogout()">
+            <span nz-icon nzType="logout" nzTheme="outline" class="mr-1"></span
+            >Logout
+          </li>
+        </ul>
+      </nz-dropdown-menu>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content"><app-chatbox></app-chatbox></div>
+    </nz-content>
+    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+  </nz-layout>
+</nz-layout>
