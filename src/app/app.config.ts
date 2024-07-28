@@ -9,12 +9,13 @@ import { routes } from "./app.routes";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { provideHttpClient } from "@angular/common/http";
-import { icons } from './icons-provider';
-import { provideNzIcons } from 'ng-zorro-antd/icon';
-import { en_US, provideNzI18n } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { icons } from "./icons-provider";
+import { provideNzIcons } from "ng-zorro-antd/icon";
+import { en_US, provideNzI18n } from "ng-zorro-antd/i18n";
+import { registerLocaleData } from "@angular/common";
+import en from "@angular/common/locales/en";
+import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
+import { provideToastr } from "ngx-toastr";
 
 registerLocaleData(en);
 
@@ -23,6 +24,12 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     importProvidersFrom(BrowserModule, FormsModule),
-    provideHttpClient(), provideNzIcons(icons), provideNzI18n(en_US), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient(),
+    provideHttpClient(),
+    provideNzIcons(icons),
+    provideNzI18n(en_US),
+    importProvidersFrom(FormsModule),
+    provideAnimationsAsync(),
+    provideHttpClient(),
+    provideToastr(),
   ],
 };
