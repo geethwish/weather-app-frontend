@@ -1,7 +1,4 @@
 import {
-  Platform
-} from "./chunk-SBSGXA3C.js";
-import {
   BarsOutline,
   CalendarOutline,
   CaretDownFill,
@@ -48,10 +45,13 @@ import {
   ZoomOutOutline
 } from "./chunk-GSS2JWKH.js";
 import {
+  Platform
+} from "./chunk-SBSGXA3C.js";
+import {
   canUseDom,
   updateCSS,
   warn
-} from "./chunk-E5IAL6LM.js";
+} from "./chunk-3IEJADGA.js";
 import {
   DomSanitizer
 } from "./chunk-UMMJXTFN.js";
@@ -2482,4 +2482,4 @@ export {
   provideNzIconsPatch,
   NzIconModule
 };
-//# sourceMappingURL=chunk-CBRI4WAN.js.map
+//# sourceMappingURL=chunk-KUTW6UCX.js.map

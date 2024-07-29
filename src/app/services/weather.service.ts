@@ -11,6 +11,5 @@ export class WeatherService {
 
   getWeather(location: string): Observable<any> {
     return from(this.axiosService.get(`/weather?location=${location}`));
-    //return this.http.get(`${this.apiUrl}?location=${location}`);
   }
 }

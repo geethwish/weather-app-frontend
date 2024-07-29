@@ -1,0 +1,79 @@
+<div
+  class="w-full mt-16 lg:mt-6 lg:px-8 container mx-auto"
+  *ngIf="data !== null"
+>
+  <div class="flex flex-wrap w-full lg:w-auto">
+    <div
+      class="w-full lg:w-1/4 flex rounded-lg bg-auto"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80');
+      "
+    >
+      <div class="py-6 pl-8 pr-3 w-full bg-blue-400 opacity-90 text-white">
+        <div class="mb-2">
+          <h2 class="font-bold text-3xl leading-none pb-1">Tuesday</h2>
+          <h3 class="leading-none pb-2 pl-1">15 Jan 19</h3>
+          <p class="flex aling-center opacity-75">
+            <fa-icon [icon]="locationIcon" class="mr-1"></fa-icon
+            >{{ data.location.name }}, {{ data.location.country }}
+          </p>
+        </div>
+        <div>
+          <img
+            [src]="'https:' + data.current.condition.icon"
+            alt="Nothing"
+            loading="lazy"
+          />
+          <strong class="leading-none text-6xl block font-weight-bolder"
+            >{{ data.current.temp_c }}ºC</strong
+          >
+          <b class="text-2xl block font-bold">{{
+            data.current.condition.text
+          }}</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full lg:w-3/4 flex ml-0">
+      <div class="bg-gray-800 text-white p-8 lg:rounded-r-lg w-full">
+        <div class="flex justify-between w-64 mb-4 w-full">
+          <div class="w-auto font-bold uppercase text-90">Precipitation</div>
+          <div class="w-auto text-right">{{ data.current.precip_in }} %</div>
+        </div>
+        <div class="flex justify-between w-64 mb-4 w-full">
+          <div class="w-auto font-bold uppercase text-90">Humidity</div>
+          <div class="w-auto text-right">{{ data.current.humidity }} %</div>
+        </div>
+        <div class="flex justify-between w-64 mb-8 w-full">
+          <div class="w-auto font-bold uppercase text-90">Wind</div>
+          <div class="w-auto text-right">{{ data.current.wind_mph }} Mph</div>
+        </div>
+        <div class="grid grid-cols-5 grid-rows-3 gap-4">
+          @for (forecast of data.forecast.forecastday; track $index ;let key =
+          $index) {
+          <div
+            class="flex flex-col rounded-lg pb-4 flex-wrap"
+            [ngClass]="{
+              'bg-gray-100 text-black ': key === 0,
+              'bg-gray-900 text-gray-100 ': key !== 0
+            }"
+          >
+            <div class="text-center pt-2 mb-2">
+              <img
+                [src]="'https:' + forecast.day.condition.icon"
+                [alt]="forecast.day.condition.text"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-center">
+              <b class="font-normal">{{ getTheDayByDate(forecast.date) }}</b
+              ><br />
+              <strong class="text-xl">{{ forecast.day.avgtemp_c }}ºC</strong>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
